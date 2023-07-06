@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      iframe#tela {
+        width: 95vw;
+        height: 400px;
+        border: 2px solid black;
+      }
+    </style>
+    <title>Uso de iframe</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+      consequuntur delectus, commodi saepe provident itaque. Nam consectetur
+      tempora minus iure adipisci tempore, suscipit sunt aut amet dicta nihil
+      similique ea?
+    </p>
+    <ul>
+      <li><a href="pagextra/pag001.html" target="frame">Primeira pagina</a></li>
+      <li><a href="pagextra/pag002.html" target="frame">Seguna pagina</a></li>
+      <li>
+        <a href="pagextra/pag003.html" target="frame">Terceira pagina</a>
+      </li>
+    </ul>
+    <!--O dierencial é que o iframe tem que ter o (name) que usamos no target="frame"-->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quos
+      aspernatur enim repudiandae cumque optio obcaecati magni fugiat tempore
+      laboriosam ipsa, voluptas ipsum dolorum, nemo temporibus omnis explicabo,
+      odio pariatur.
+    </p>
+    <!--<iframe id="tela" name="frame" src=""> é usado para abrir paginas dentro iframe igual no exercício  acima usando lista de link.-->
+
+    <!--Vamo criar no lugar do src= (srcdoc=) serve para introduzir html no iframe como no exemplo a baixo-->
+    <iframe
+      id="tela"
+      name="frame"
+      srcdoc="<h1> Escolha uma das opções acima</h1> <p>Iframe é usado para abrir paginas dentro do iframe igual no exercício  acima usando lista de link.</p><img src='imagem/log.png'> "
+    >
+      <p>Infeslismente o seu navegador não é compativo com isso.</p>
+    </iframe>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor aliquid
+      qui totam cumque accusamus recusandae praesentium assumenda asperiores
+      maxime fuga voluptate, ex suscipit at iure ipsam quaerat debitis enim!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis.
+      Fuga incidunt in earum soluta dicta dolorum quaerat, repudiandae
+      reprehenderit recusandae, voluptates quod et molestiae maiores. Dolor
+      cumque est velit!
+    </p>
+  </body>
+</html>
